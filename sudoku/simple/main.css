@@ -1,0 +1,132 @@
+    /*reset*/
+    html {
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ol,
+    ul {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /**/
+
+    * {
+        user-select: none;
+    }
+
+    body{
+        text-align: center;
+    }
+    body>div{
+        display: inline-block;
+    }
+
+    failcount:before{
+        content: 'failcount: ';
+    }
+    failcount{
+        display:div;
+    }
+
+    numbers {
+        cursor: default;
+        width: 276px;
+        display: flex;
+        padding-top: 20px;
+        padding: 20px 10px;
+        font-size:2rem;
+
+    }
+
+    numbers>div {
+        flex: 1;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    numbers>div:not(.fade):hover {
+        color: cyan;
+    }
+
+    numbers>div.fade {
+        opacity: .2;
+    }
+
+
+    field {
+        cursor: default;
+        display: flex;
+        flex-wrap: wrap;
+        width: 276px;
+    }
+
+    field>div {
+        border: 1px solid darkblue;
+        display: flex;
+        flex-wrap: wrap;
+        width: 92px;
+    }
+
+    field>div>div {
+        border: 1px solid lightblue;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    field>div>div:not(.active):not(.locked):hover {
+        background-color: lightcyan;
+    }
+
+    field>div>div.row-col:not(.active):not(.locked){
+        background-color: lightgoldenrodyellow;
+    }
+
+    field>div>div.row-col.locked{
+        /* background-color: goldenrod; */
+    }
+
+    field>div>div.failed{
+        background-color: red !important;
+    }
+
+    div.same-digit {
+        /* color: cyan; */
+        font-weight: bold;
+    }
+
+    div.active {
+        background-color: cyan;
+    }
+
+    div.locked {
+        background-color: lightgray;
+    }
